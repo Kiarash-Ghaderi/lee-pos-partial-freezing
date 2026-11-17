@@ -1,0 +1,11 @@
+{
+ "condition": "partial_freezing_lower3",
+ "best_dev_token_accuracy": 0.9548423064670277,
+ "test": {
+  "token_accuracy": 0.9577756598848051,
+  "macro_f1_observed_labels": 0.8807321293005124,
+  "evaluated_words": 24133
+ },
+ "training_seconds": 674.8067812998779,
+ "checkpoint": ".\\results\\partial_freezing_lower3_best.pt"
+}

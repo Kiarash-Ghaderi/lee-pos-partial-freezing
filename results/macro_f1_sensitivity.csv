@@ -1,0 +1,3 @@
+metric,baseline,partial
+Macro F1 - All 16 classes,0.887309046743356,0.8807321293005124
+Macro F1 - Excluding X,0.9464629831929131,0.9394476045872131

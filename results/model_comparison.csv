@@ -1,0 +1,3 @@
+condition,trainable_parameters,best_dev_accuracy,test_accuracy,test_macro_f1,training_seconds,accuracy_difference_vs_baseline,training_time_change_vs_baseline_pct
+Baseline: full fine-tuning,134746384,0.9617314431347563,0.9636182820204698,0.887309046743356,779.4978558998555,0.0,0.0
+Partial: freeze lower 3 blocks,113482768,0.9548423064670277,0.9577756598848051,0.8807321293005124,674.8067812998779,-0.005842622135664777,-13.430578905072391

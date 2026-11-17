@@ -1,0 +1,106 @@
+{
+ "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+ "platform": "Windows-10-10.0.26300-SP0",
+ "pytorch": "2.14.1+cu130",
+ "transformers": "5.23.0",
+ "numpy": "2.4.6",
+ "pandas": "3.1.1",
+ "device": "cuda",
+ "gpu_name": "NVIDIA GeForce RTX 3050 6GB Laptop GPU",
+ "cuda_version": "13.0",
+ "seed": 42,
+ "model_name": "distilbert/distilbert-base-multilingual-cased",
+ "model_revision": null,
+ "max_length": 256,
+ "batch_size": 8,
+ "epochs": 3,
+ "learning_rate": 2e-05,
+ "weight_decay": 0.01,
+ "num_frozen_layers": 3,
+ "dataset_source": "https://raw.githubusercontent.com/UniversalDependencies/UD_Persian-PerDT/master",
+ "dataset_file_sha256": {
+  "train": "5399c9543e31a9fbe9d994292b7b73b51a6e304e73e308eadc3a5b02c8f29a6d",
+  "validation": "6dd8614902dbe1e02e5fc3caae912982f3675378b14b5a1a71e6b2784917917b",
+  "test": "4daf1fbf1bf9e0e36ac15c8ce1fe050740c7dc016cd0fdeb67b785699c1d599d"
+ },
+ "train_subset_sentences": 12000,
+ "validation_sentences": 1456,
+ "test_sentences": 1455,
+ "train_subset_upos_counts": {
+  "NOUN": 69712,
+  "ADJ": 14386,
+  "PRON": 9861,
+  "ADP": 29363,
+  "VERB": 22505,
+  "CCONJ": 9154,
+  "AUX": 7604,
+  "PUNCT": 18311,
+  "PROPN": 10070,
+  "DET": 4333,
+  "SCONJ": 5723,
+  "NUM": 2648,
+  "ADV": 3398,
+  "X": 2,
+  "PART": 191,
+  "INTJ": 316
+ },
+ "max_length_truncation": {
+  "train": {
+   "dropped_words": 0,
+   "sentences_with_truncation": 0
+  },
+  "validation": {
+   "dropped_words": 35,
+   "sentences_with_truncation": 1
+  },
+  "test": {
+   "dropped_words": 0,
+   "sentences_with_truncation": 0
+  }
+ },
+ "baseline_result": {
+  "condition": "baseline_full_finetuning",
+  "best_dev_token_accuracy": 0.9617314431347563,
+  "test": {
+   "token_accuracy": 0.9636182820204698,
+   "macro_f1_observed_labels": 0.887309046743356,
+   "evaluated_words": 24133
+  },
+  "training_seconds": 779.4978558998555,
+  "checkpoint": ".\\results\\baseline_full_finetuning_best.pt"
+ },
+ "partial_freezing_result": {
+  "condition": "partial_freezing_lower3",
+  "best_dev_token_accuracy": 0.9548423064670277,
+  "test": {
+   "token_accuracy": 0.9577756598848051,
+   "macro_f1_observed_labels": 0.8807321293005124,
+   "evaluated_words": 24133
+  },
+  "training_seconds": 674.8067812998779,
+  "checkpoint": ".\\results\\partial_freezing_lower3_best.pt"
+ },
+ "baseline_trainable_parameters": 134746384,
+ "partial_trainable_parameters": 113482768,
+ "total_parameters": 134746384,
+ "frozen_transformer_blocks": 3,
+ "upos_tags": [
+  "ADJ",
+  "ADP",
+  "ADV",
+  "AUX",
+  "CCONJ",
+  "DET",
+  "INTJ",
+  "NOUN",
+  "NUM",
+  "PART",
+  "PRON",
+  "PROPN",
+  "PUNCT",
+  "SCONJ",
+  "VERB",
+  "X"
+ ],
+ "wall_clock_note": "Training seconds are measured per condition inside train_condition; download/tokenization time is excluded."
+}

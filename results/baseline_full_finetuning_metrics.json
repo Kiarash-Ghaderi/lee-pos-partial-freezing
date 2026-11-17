@@ -1,0 +1,11 @@
+{
+ "condition": "baseline_full_finetuning",
+ "best_dev_token_accuracy": 0.9617314431347563,
+ "test": {
+  "token_accuracy": 0.9636182820204698,
+  "macro_f1_observed_labels": 0.887309046743356,
+  "evaluated_words": 24133
+ },
+ "training_seconds": 779.4978558998555,
+ "checkpoint": ".\\results\\baseline_full_finetuning_best.pt"
+}
