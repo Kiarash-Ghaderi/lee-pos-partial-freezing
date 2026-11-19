@@ -1,4 +1,4 @@
-﻿# Python environment
+# Python environment
 .venv/
 venv/
 __pycache__/
@@ -7,8 +7,8 @@ __pycache__/
 # Jupyter temporary files
 .ipynb_checkpoints/
 
-# Raw datasets (downloadable from official source)
-data/raw/
+# Local datasets
+data/
 
 # Large model checkpoints
 *.pt
@@ -16,11 +16,7 @@ data/raw/
 *.bin
 *.safetensors
 
-# Private local logs
-logs/terminal-session.txt
-logs/environment.txt
-
-# Python environment files and secrets
+# Environment files and secrets
 .env
 .env.*
 !.env.example
@@ -29,33 +25,21 @@ logs/environment.txt
 .DS_Store
 Thumbs.db
 
-# Temporary files
+# Temporary and backup files
 *.tmp
 *.bak
+*_backup.ipynb
+*_pre_finalization.ipynb
+README_before_final_update.md
+README_new.md
+README_pre_finalization*.md
+update_discussion.py
 
-# Downloaded Python wheels
+# Local logs and execution artifacts
+logs/
 wheels/
 *.whl
 
-# Duplicate review package (kept locally for inspection)
+# Local review packages
+review_package
 review_package_upload/
-
-# Model checkpoints
-results/*.pt
-
-# Local machine-specific logs
-logs/terminal-session.txt
-logs/environment.txt
-
-# Local execution logs
-/logs/
-
-# Duplicate staging files
-/review_package
-
-# Local backup package
-/review_package_upload/
-
-# Downloaded installation wheels
-/wheels/
-
