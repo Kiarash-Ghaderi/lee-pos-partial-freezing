@@ -1,4 +1,4 @@
-﻿# Part 1: Experimental Record
+# Part 1: Experimental Record
 ## Partial Freezing of DistilmBERT for Persian POS Tagging
 
 **Researcher:** Kiarash Ghaderi  
@@ -36,7 +36,9 @@
 | Test Accuracy | 96.36% | 95.78% |
 | Test Macro F1 | 88.73% | 88.07% |
 | Trainable Parameters | 134,746,384 | 113,482,768 |
-| Train + Dev Evaluation Time | 779.50 sec | 674.81 sec |
+| Training and Validation Time (seconds) | 779.50 sec | 674.81 sec |
+
+The reported training time is measured using time.perf_counter() inside train_condition. It includes the three-epoch training loop, validation evaluation after each epoch, and best-checkpoint saving. It excludes dataset downloading, tokenization, model and optimizer initialization, training-history export, checkpoint reloading, and final test evaluation.
 
 ## 4. Preliminary Observations
 

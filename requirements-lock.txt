@@ -1,4 +1,4 @@
-﻿# Reproducible environment snapshot
+# Reproducible environment snapshot
 # Python 3.11 / Windows x64 / NVIDIA CUDA 13.0
 --extra-index-url https://download.pytorch.org/whl/cu130
 torch==2.14.1+cu130
